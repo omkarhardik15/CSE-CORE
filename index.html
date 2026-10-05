@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B.Tech Daily Study Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="topbar">
+      <div class="brand">
+        <div class="brand-icon">B</div>
+        <div>
+          <h1>B.Tech Study Portal</h1>
+          <p>Daily Class Material</p>
+        </div>
+      </div>
+      <button id="themeToggle" class="icon-btn" title="Toggle theme">☾</button>
+    </div>
+
+    <div class="hero-content">
+      <span class="badge">CSE CORE • DAILY MATERIAL</span>
+      <h2>Everything you studied,<br><span>in one place.</span></h2>
+      <p>Choose a date to open that day's complete study PDF.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="toolbar">
+      <div>
+        <h3>Daily Study Material</h3>
+        <p id="materialCount">0 days available</p>
+      </div>
+      <div class="controls">
+        <input id="searchInput" type="search" placeholder="Search by date..." aria-label="Search by date">
+        <button id="todayBtn" class="today-btn">Today</button>
+      </div>
+    </section>
+
+    <section id="emptyState" class="empty-state hidden">
+      <div class="empty-icon">📚</div>
+      <h3>No material found</h3>
+      <p>Try another date or add a PDF to the <code>pdfs</code> folder.</p>
+    </section>
+
+    <section id="dateGrid" class="date-grid"></section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> B.Tech Daily Study Portal</p>
+    <p>Keep learning. Keep building. 🚀</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
