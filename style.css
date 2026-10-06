@@ -1,7 +1,7 @@
 :root {
   color-scheme: dark;
   --bg: #040101;
-  --surface: #8a2727;
+  --surface: #0a0a0a;
   --text: #eef7ff;
   --muted: #a5bacb;
   --accent: #65bcff;
@@ -10,13 +10,19 @@
 }
 
 * {
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   min-height: 100vh;
-  background: radial-gradient(ellipse 1000px 360px at 8% 0%, rgba(101, 188, 255, .18), rgba(112, 236, 208, .1) 40%, transparent 75%), var(--bg);
+  background: #de6161;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2657eb, #de6161);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2657eb, #de6161);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   color: var(--text);
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif
 }
@@ -94,10 +100,10 @@ header {
 }
 
 .badge {
-  border: 1px solid var(--border);
+  border: 1px solid #364656;
   border-radius: 100px;
   padding: 8px 12px;
-  color: var(--muted);
+  color: #f4faff;
   font-size: 12px;
   font-weight: 700
 }
@@ -144,7 +150,7 @@ h1 span {
   min-height: 280px;
   border-radius: 24px;
   border: 1px solid var(--border);
-  background: radial-gradient(circle at 100% 0, rgba(112, 236, 208, .1), transparent 65%), linear-gradient(160deg, var(--surface), #193348)
+  background: radial-gradient(circle at 100% 0, rgba(232, 221, 221, 0.1), transparent 65%), linear-gradient(160deg, var(--surface), #193348)
 }
 
 .month {
@@ -376,7 +382,7 @@ button.primary {
 }
 
 .empty p {
-  color: var(--muted)
+  color: var()
 }
 
 footer {
@@ -388,7 +394,7 @@ footer {
   border-top: 1px solid var(--border);
   padding-top: 18px;
   font-size: 13px;
-  color: var(--muted)
+  color: var()
 }
 
 .sr-only {
@@ -478,6 +484,7 @@ footer {
     transform: none
   }
 }
+
 /* Latest-material box */
 .preview {
   display: flex;
@@ -488,14 +495,9 @@ footer {
   padding: 22px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 24px;
-  background:
-    radial-gradient(
-      circle at top right,
-      rgba(255, 255, 255, 0.06),
-      transparent 65%
-    ),
-    linear-gradient(135deg, #842b2e 0%, #51313e 48%, #193b50 100%);
+  background: radial-gradient(circle at top right, transparent 100%), linear-gradient(135deg, #842b2e 0%, #f39bbf 48%, #193b50 100%);
 }
+
 .preview .month {
   margin: 0;
   padding: 10px 12px;
@@ -506,19 +508,22 @@ footer {
   font-size: 13px;
   font-weight: 700;
 }
+
 .preview .calendar {
   width: 156px;
   min-height: 128px;
   padding: 16px;
-  background: #050708;
+  background: #080508;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 16px;
 }
+
 .preview .calendar small {
   display: block;
   color: #a5bacb;
   font-size: 12px;
 }
+
 .preview .calendar strong {
   display: block;
   margin: 10px 0;
@@ -527,6 +532,7 @@ footer {
   font-weight: 800;
   line-height: 1;
 }
+
 .latest-actions {
   display: flex;
   flex-wrap: wrap;
@@ -534,6 +540,7 @@ footer {
   width: 100%;
   margin-top: auto;
 }
+
 .latest-actions a {
   display: inline-flex;
   align-items: center;
@@ -549,19 +556,23 @@ footer {
   text-decoration: none;
   transition: background 0.2s, border-color 0.2s;
 }
+
 .latest-actions a:hover {
   background: rgba(5, 7, 8, 0.6);
   border-color: #70ecd0;
 }
+
 .latest-actions a:focus-visible {
   outline: 2px solid #70ecd0;
   outline-offset: 4px;
 }
+
 .header-links {
   display: flex;
   align-items: center;
   gap: 12px;
 }
+
 .github-profile {
   display: inline-flex;
   align-items: center;
@@ -578,24 +589,30 @@ footer {
   font-weight: 650;
   transition: border-color 0.2s, background 0.2s;
 }
+
 .github-profile:hover {
   border-color: var(--mint);
   background: rgba(112, 236, 208, 0.08);
 }
+
 .github-profile svg {
   flex-shrink: 0;
 }
+
 @media (max-width: 600px) {
   .github-profile {
     width: 42px;
     padding: 10px;
   }
+
   .github-profile span {
     display: none;
   }
+
   .brand {
     min-width: 0;
   }
+
   .logo {
     flex-shrink: 0;
   }
