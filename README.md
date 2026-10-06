@@ -6,9 +6,7 @@ A simple website for classmates to access and track daily study materials and le
 
 <br/>
 
-<p align="center">
-  <img src="./banner.svg" alt="B.Tech Study Portal Banner" width="100%" />
-</p>
+![B.Tech Study Portal Banner](banner.svg)
 
 <br/>
 
