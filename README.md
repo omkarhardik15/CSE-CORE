@@ -17,8 +17,7 @@ A simple website for classmates to access and track daily study materials and le
 ## ⚡ Features
 
 - **Daily Class Material:** All lecture notes and slides arranged neatly by date.
-- **Latest Material Widget:** The most recently uploaded PDF is always pinned right at the top for quick access[cite: 1, 2].
-- **Date Filter & "Today" Button:** Easily jump to any date or view today's notes with a single click[cite: 1, 2].
+- **Latest Material Widget:** The most recently uploaded PDF is always pinned right at the top for quick access.
 - **View & Download:** Read PDFs directly in your browser or download them instantly.
 
 ---
