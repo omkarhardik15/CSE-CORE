@@ -1,1 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 480" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient matching your .preview component -->
+    <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#842b2e"/>
+      <stop offset="42%" stop-color="#d96a8f" stop-opacity="0.9"/>
+      <stop offset="78%" stop-color="#193b50" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0a1824"/>
+    </linearGradient>
 
+    <!-- Brand Cyan-to-Mint Accent -->
+    <linearGradient id="brandMint" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#65bcff"/>
+      <stop offset="100%" stop-color="#70ecd0"/>
+    </linearGradient>
+
+    <!-- Glass Surface Gradient -->
+    <linearGradient id="darkGlassPanel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e1319" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#05070a" stop-opacity="0.96"/>
+    </linearGradient>
+
+    <!-- Soft Diffuse Shadow -->
+    <filter id="panelShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+
+    <!-- Laser Mint Glow -->
+    <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <style>
+    .font-sans { font-family: Inter, system-ui, -apple-system, sans-serif; }
+    .font-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+  </style>
+
+  <!-- Container Frame -->
+  <rect x="12" y="12" width="736" height="456" rx="28" fill="url(#heroGradient)"/>
+  <rect x="12" y="12" width="736" height="456" rx="28" fill="none" stroke="rgba(255, 255, 255, 0.16)" stroke-width="1.5"/>
+
+  <!-- Subtle Cyber Grid Overlay in Background -->
+  <g stroke="rgba(255, 255, 255, 0.04)" stroke-width="1">
+    <line x1="80" y1="12" x2="80" y2="468"/>
+    <line x1="200" y1="12" x2="200" y2="468"/>
+    <line x1="320" y1="12" x2="320" y2="468"/>
+    <line x1="440" y1="12" x2="440" y2="468"/>
+    <line x1="560" y1="12" x2="560" y2="468"/>
+    <line x1="680" y1="12" x2="680" y2="468"/>
+    <line x1="12" y1="100" x2="748" y2="100"/>
+    <line x1="12" y1="220" x2="748" y2="220"/>
+    <line x1="12" y1="340" x2="748" y2="340"/>
+  </g>
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="580" cy="140" r="130" fill="url(#brandMint)" opacity="0.12" filter="url(#neonGlow)"/>
+  <circle cx="160" cy="360" r="100" fill="#2657eb" opacity="0.2" filter="url(#neonGlow)"/>
+
+  <!-- ================= HEADER SECTION ================= -->
+  <!-- Section Badge -->
+  <g transform="translate(42, 40)">
+    <rect width="180" height="34" rx="17" fill="rgba(5, 7, 8, 0.65)" stroke="#364656" stroke-width="1.2"/>
+    <circle cx="18" cy="17" r="4.5" fill="#70ecd0" filter="url(#neonGlow)"/>
+    <text x="32" y="21.5" class="font-sans" fill="#f4faff" font-size="12" font-weight="700" letter-spacing="0.05em">CSE CORE 26E1B1</text>
+  </g>
+
+  <!-- Brand Emblem 'B' -->
+  <g transform="translate(668, 38)">
+    <rect width="48" height="48" rx="14" fill="url(#brandMint)" filter="url(#panelShadow)"/>
+    <text x="24" y="33" text-anchor="middle" class="font-sans" fill="#040101" font-size="25" font-weight="900">B</text>
+  </g>
+
+  <!-- ================= CENTRAL COMPOSITION ================= -->
+
+  <!-- LAYER 1: Background Tilt Document (Lecture Notes / Code) -->
+  <g transform="translate(190, 110) rotate(-6 160 140)" filter="url(#panelShadow)">
+    <rect width="280" height="280" rx="20" fill="url(#darkGlassPanel)" stroke="rgba(101, 188, 255, 0.3)" stroke-width="1.5"/>
+    
+    <!-- Document Header bar -->
+    <rect x="22" y="24" width="40" height="18" rx="6" fill="rgba(101, 188, 255, 0.15)"/>
+    <text x="42" y="36.5" text-anchor="middle" class="font-mono" fill="#65bcff" font-size="9" font-weight="700">JAVA</text>
+    <rect x="70" y="29" width="100" height="8" rx="4" fill="rgba(165, 186, 203, 0.2)"/>
+
+    <!-- Simulated Lecture / Code Lines -->
+    <g transform="translate(22, 64)" class="font-mono" font-size="10">
+      <text x="0" y="0" fill="#a5bacb">// Daily Lecture Notes</text>
+      <text x="0" y="20" fill="#65bcff">class <tspan fill="#eef7ff">BinaryTree</tspan> {</text>
+      <text x="14" y="40" fill="#a5bacb">Node root;</text>
+      <text x="14" y="60" fill="#70ecd0">void <tspan fill="#eef7ff">insert</tspan><tspan fill="#a5bacb">(int val) {</tspan></text>
+      <text x="28" y="80" fill="#a5bacb">root = addRec(root, val);</text>
+      <text x="14" y="100" fill="#a5bacb">}</text>
+      <text x="0" y="120" fill="#65bcff">}</text>
+    </g>
+
+    <!-- Floating PDF Tag at top right of the sheet -->
+    <g transform="translate(210, 22)">
+      <rect width="48" height="22" rx="11" fill="rgba(222, 97, 97, 0.15)" stroke="rgba(222, 97, 97, 0.4)" stroke-width="1"/>
+      <text x="24" y="14.5" text-anchor="middle" class="font-sans" fill="#f87171" font-size="10" font-weight="800">.PDF</text>
+    </g>
+  </g>
+
+  <!-- LAYER 2: Foreground Calendar Glass Card -->
+  <g transform="translate(360, 150)" filter="url(#panelShadow)">
+    <rect width="250" height="240" rx="22" fill="#080a0f" stroke="rgba(255, 255, 255, 0.22)" stroke-width="1.5"/>
+
+    <!-- Inner Ambient Accent at Card Top -->
+    <rect x="1.5" y="1.5" width="247" height="6" rx="3" fill="url(#brandMint)"/>
+
+    <!-- Card Subheader & Status -->
+    <g transform="translate(24, 26)">
+      <rect width="18" height="18" rx="4" fill="none" stroke="#70ecd0" stroke-width="1.8"/>
+      <line x1="5" y1="0" x2="5" y2="4" stroke="#70ecd0" stroke-width="1.8" stroke-linecap="round"/>
+      <line x1="13" y1="0" x2="13" y2="4" stroke="#70ecd0" stroke-width="1.8" stroke-linecap="round"/>
+      <line x1="0" y1="7" x2="18" y2="7" stroke="#70ecd0" stroke-width="1.5"/>
+      <text x="28" y="13.5" class="font-sans" fill="#a5bacb" font-size="12" font-weight="600">Latest Material</text>
+    </g>
+
+    <!-- Big Date & Day Display -->
+    <text x="24" y="112" class="font-sans" fill="#eef7ff" font-size="56" font-weight="800" letter-spacing="-0.03em">07</text>
+    <text x="24" y="140" class="font-sans" fill="#70ecd0" font-size="15" font-weight="650">Wednesday · Oct 2026</text>
+
+    <!-- Action Button (View PDF Pill) -->
+    <g transform="translate(24, 166)">
+      <rect width="202" height="42" rx="12" fill="rgba(112, 236, 208, 0.12)" stroke="#70ecd0" stroke-width="1.2"/>
+      <text x="88" y="26" text-anchor="middle" class="font-sans" fill="#70ecd0" font-size="13" font-weight="700">Open Daily PDF</text>
+      <!-- Arrow Icon -->
+      <path d="M148 21 L156 21 M153 18 L156 21 L153 24" stroke="#70ecd0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g>
+  </g>
+
+  <!-- Interactive Floating Cursor Pill -->
+  <g transform="translate(565, 340)" filter="url(#panelShadow)">
+    <polygon points="0,0 6,20 10,14 17,21 21,17 14,10 20,6" fill="#65bcff"/>
+    <polygon points="0,0 5,17 9,13 15,19 18,16 12,9 17,5" fill="#eef7ff"/>
+  </g>
+
+  <!-- ================= FOOTER / MOTTO ================= -->
+  <g transform="translate(42, 426)">
+    <text x="0" y="0" class="font-sans" font-size="13.5">
+      <tspan fill="#eef7ff" font-weight="700">Everything you studied.</tspan>
+      <tspan dx="8" fill="#70ecd0" font-weight="700">All in one place.</tspan>
+    </text>
+  </g>
+
+  <g transform="translate(718, 426)">
+    <text x="0" y="0" text-anchor="end" class="font-mono" fill="rgba(165, 186, 203, 0.6)" font-size="11">SEC: 26E1B1 // SYNCED</text>
+  </g>
+</svg>
