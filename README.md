@@ -1,2 +1,26 @@
-<div>GET ALL PDF</div> 
-->https://omkarhardik15.github.io/CSE-CORE/
+<div align="center">
+
+# 📚 B.Tech Study Portal (CSE CORE 26E1B1)
+
+A simple website for classmates to access and track daily study materials and lecture PDFs in one place.
+
+<br/>
+
+<p align="center">
+  <img src="./banner.svg" alt="B.Tech Study Portal Banner" width="100%" />
+</p>
+
+<br/>
+
+</div>
+
+---
+
+## ⚡ Features
+
+- **Daily Class Material:** All lecture notes and slides arranged neatly by date.
+- **Latest Material Widget:** The most recently uploaded PDF is always pinned right at the top for quick access[cite: 1, 2].
+- **Date Filter & "Today" Button:** Easily jump to any date or view today's notes with a single click[cite: 1, 2].
+- **View & Download:** Read PDFs directly in your browser or download them instantly.
+
+---
