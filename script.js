@@ -57,7 +57,7 @@ function render(filter = "") {
   const query = filter.trim().toLowerCase();
 
   const sorted = [...studyMaterial].sort((a, b) =>
-    b.date.localeCompare(a.date)
+    a.date.localeCompare(b.date)
   );
 
   const filtered = sorted.filter(item => {
