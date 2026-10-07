@@ -2,7 +2,8 @@
 
 # 📚 B.Tech Study Portal (CSE CORE 26E1B1)
 
-A simple website for classmates to access and track daily study materials and lecture PDFs in one place.
+<p>A simple website for classmates to access and track daily study materials and lecture PDFs in one place.</p>
+<span><b>Website: https://omkarhardik15.github.io/CSE-CORE/</span>
 
 <br/>
 
