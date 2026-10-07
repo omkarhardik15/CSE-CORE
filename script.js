@@ -1,7 +1,7 @@
 "use strict";
 
 // Add a new dated PDF here.
-// Paths are relative to index.html.
+// Paths are relative to index.html
 const studyMaterial = [
   { date: "2026-10-05", file: "pdfs/2026-10-05.pdf" },
   { date: "2026-10-06", file: "pdfs/2026-10-06.pdf" },
