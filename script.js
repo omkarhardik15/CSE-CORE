@@ -6,10 +6,10 @@ const studyMaterial = [
   { date: "2026-10-05", file: "pdfs/2026-10-05.pdf" },
   { date: "2026-10-06", file: "pdfs/2026-10-06.pdf" },
   { date: "2026-10-07", file: "pdfs/2026-10-07.pdf" },
-  // { date: "2026-10-08", file: "pdfs/2026-10-08.pdf" },
-  // { date: "2026-10-09", file: "pdfs/2026-10-09.pdf" },
+  { date: "2026-10-09", file: "pdfs/2026-10-09.pdf" },
   // { date: "2026-10-10", file: "pdfs/2026-10-10.pdf" },
-  // { date: "2026-10-12", file: "pdfs/2026-10-12.pdf" }
+  // { date: "2026-10-12", file: "pdfs/2026-10-12.pdf" },
+  // { date: "2026-10-13", file: "pdfs/2026-10-13.pdf" },
 ];
 
 const grid = document.getElementById("dateGrid");
