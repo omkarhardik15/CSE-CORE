@@ -13,7 +13,7 @@ const studyMaterial = [
   { date: "2026-10-14", file: "pdfs/2026-10-14.pdf" },
   { date: "2026-10-16", file: "pdfs/2026-10-16.pdf" },
   { date: "2026-11-08", file: "pdfs/2026-11-07.pdf" },
-  // { date: "2026-11-", file: "pdfs/2026-11-13.pdf" },
+  { date: "2026-11-09", file: "pdfs/2026-11-09.pdf" },
 ];
 
 const grid = document.getElementById("dateGrid");
