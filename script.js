@@ -14,6 +14,10 @@ const studyMaterial = [
   { date: "2026-10-16", file: "pdfs/2026-10-16.pdf" },
   { date: "2026-11-07", file: "pdfs/2026-11-07.pdf" },
   { date: "2026-11-09", file: "pdfs/2026-11-09.pdf" },
+  { date: "2026-11-11", file: "pdfs/2026-11-11.pdf" },
+  //{ date: "2026-11-12", file: "pdfs/2026-11-12.pdf" },
+  //{ date: "2026-11-13", file: "pdfs/2026-11-13.pdf" },
+  //{ date: "2026-11-14", file: "pdfs/2026-11-14.pdf" },
 ];
 
 const grid = document.getElementById("dateGrid");
