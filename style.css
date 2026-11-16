@@ -524,3 +524,132 @@ footer {
     transform: none;
   }
 }
+
+/* Latest Material preview block */
+.preview {
+  gap: 16px;
+}
+
+.preview-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+}
+
+.preview .month,
+.notes-prompt {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 36px;
+  padding: 7px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  background: rgba(10, 8, 12, 0.65);
+  backdrop-filter: blur(10px);
+  color: #eef7ff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.preview .month {
+  margin: 0;
+}
+
+.notes-prompt {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.notes-prompt span {
+  color: #70ecd0;
+  font-size: 16px;
+}
+
+.preview-cards {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 156px;
+  align-items: stretch;
+  gap: 14px;
+  width: 100%;
+}
+
+.preview .calendar {
+  width: 100%;
+  min-width: 0;
+}
+
+.notes-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  background: #080508;
+  color: #eef7ff;
+  text-decoration: none;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.notes-tile small {
+  display: block;
+  color: #a5bacb;
+  font-size: 12px;
+}
+
+.notes-tile small:first-child {
+  white-space: nowrap;
+}
+
+.notes-tile strong {
+  display: block;
+  margin: 8px 0;
+  color: #70ecd0;
+  font-size: 18px;
+  font-weight: 750;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.notes-tile-label {
+  font-family: "Sergio", cursive;
+}
+
+.notes-tile:hover {
+  border-color: #70ecd0;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 420px) {
+  .preview-top {
+    gap: 8px;
+  }
+
+  .preview .month,
+  .notes-prompt {
+    min-height: 34px;
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+
+  .preview-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .notes-tile {
+    min-height: 128px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .notes-tile:hover {
+    transform: none;
+  }
+}
