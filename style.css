@@ -653,3 +653,7 @@ footer {
     transform: none;
   }
 }
+.preview .month,
+.notes-prompt {
+  font-family: Georgia, "Times New Roman", serif;
+}
