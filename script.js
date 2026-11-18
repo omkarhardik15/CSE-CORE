@@ -19,7 +19,8 @@ const studyMaterial = [
   { date: "2026-11-14", file: "pdfs/2026-11-14.pdf" },
   { date: "2026-11-16", file: "pdfs/2026-11-16.pdf" },
   { date: "2026-11-17", file: "pdfs/2026-11-17.pdf" },
-  //{ date: "2026-11-20", file: "pdfs/2026-11-20.pdf" },
+  { date: "2026-11-18", file: "pdfs/2026-11-18.pdf" },
+  { date: "2026-11-20", file: "pdfs/2026-11-20.pdf" },
   //{ date: "2026-11-21", file: "pdfs/2026-11-21.pdf" },
 
 ];
