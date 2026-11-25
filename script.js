@@ -23,6 +23,7 @@ const studyMaterial = [
   { date: "2026-11-21", file: "pdfs/2026-11-21.pdf" },
   { date: "2026-11-23", file: "pdfs/2026-11-23.pdf" },
   { date: "2026-11-24", file: "pdfs/2026-11-24.pdf" },
+  { date: "2026-11-24", file: "pdfs/2026-11-25.pdf" },
 
 
 
